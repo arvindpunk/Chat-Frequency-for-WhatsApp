@@ -26,7 +26,7 @@ int main() {
 	string str;
 	int limit = 100000;
 	int count = 0;
-	string pattern = "\\d{2}/\\d{2}/\\d{2},\\s\\d{2}:\\d{2}\\s-\\s(.*?):";
+	string pattern = "\\d{1,2}/\\d{1,2}/\\d{1,2},\\s\\d{1,2}:\\d{1,2}\\s-\\s(.*?):";
 	regex rgx (pattern);
 	smatch m;
 	while (getline(fchat, str) && limit) {
